@@ -1,0 +1,100 @@
+### Best Practices for Windsurf Workspace Rules: Investim Landing Page
+
+Your `landing-page` project, built with Next.js, TypeScript, Tailwind CSS, and Vercel, is well-structured for the Investim startup landing page. These rules optimize your Windsurf workspace for better AI context, productivity, and Vercel compatibility.
+
+#### 1. Project Structure and Organization
+Maintain and enhance your current Next.js structure for Windsurf:
+
+- **Root Directory**: `landing-page`
+  - `/app`: Next.js App Router for pages (e.g., `page.tsx` for the homepage).
+  - `/components`: Reusable React components (e.g., `PortfolioChart.tsx`, `CallToActionButton.tsx`, `RiskSlider.tsx`) for Investim’s features.
+  - `/hooks`: Custom hooks (e.g., `useInvestmentData.ts` for portfolio logic).
+  - `/lib`: Utilities (e.g., `formatPortfolioData.ts`).
+  - `/node_modules`: Managed by `package.json`, excluded from AI for performance.
+  - `/public`: Static assets (e.g., beach background image) for Vercel.
+  - `/styles`: Tailwind or CSS styles.
+  - **Add**:
+    - `/tests`: Unit tests (e.g., `PortfolioChart.test.tsx`) using Jest/React Testing Library.
+    - `/docs`: Documentation (`README.md`, `design-specs.md`, `v0-notes.md`) for AI context.
+
+**Why**: This structure aligns with Vercel’s Next.js conventions, helping Windsurf’s Cascade understand the Investim landing page (e.g., pie chart, risk slider, blue CTA buttons).
+
+#### 2. File and Folder Naming Conventions
+Use descriptive names for Windsurf’s AI context:
+
+- Files: Name after functionality, e.g., `InvestimHero.tsx` for "Investim pentru viitorul nostru!", `PortfolioChart.tsx` for the 5.5% return pie chart, `RiskSlider.tsx` for the risk scale.
+- Folders: Keep `/app`, `/components`, `/hooks`, etc., as they’re clear and logical.
+- Avoid generic names—tie names to Investim’s design (e.g., `CallToActionButton.tsx` for blue buttons).
+
+**Why**: Descriptive names enhance Cascade’s ability to suggest accurate updates, especially for multi-file edits on the landing page.
+
+#### 3. Managing AI Interactions with Cascade
+Configure Windsurf’s AI to focus on your project:
+
+- **`.codeiumignore`**: Exclude irrelevant files at the root:
+  ```
+  /.next
+  /node_modules
+  /.env
+  /build
+  /dist
+  ```
+  This keeps Cascade focused on `/app`, `/components`, etc.
+- **Model and Modes**: Use Write mode for code (e.g., refactoring `PortfolioChart.tsx` for 5.5% return). Use Chat mode for questions (e.g., "Optimize `RiskSlider.tsx` for mobile in Next.js"). Select a model like Claude 3.5 for TypeScript/React.
+- **Real-time Context**: Prompt with specifics, e.g., "Update `CallToActionButton.tsx` to match the blue theme in `/docs/design-specs.md`." Use step-by-step prompts if context is lost, referencing `page.tsx` or `/components`.
+
+**Why**: This ensures AI focuses on Investim’s core features, integrating with Next.js/Tailwind.
+
+#### 4. Tech Stack Integration with Vercel
+Leverage your Next.js, TypeScript, Tailwind, and Vercel setup:
+
+- **Vercel Configuration**: Ensure `next.config.mjs` optimizes for Vercel SSR (e.g., for `page.tsx`). Prompt Cascade, e.g., "Optimize `page.tsx` for Vercel SSR."
+- **Dependencies**: Use `package.json` for `next`, `react`, `typescript`, `tailwindcss`, and testing libraries. Ask Cascade, "Install `@testing-library/react` for Next.js."
+- **Environment Variables**: Store sensitive data (e.g., API keys) in `.env.local`, excluded via `.codeiumignore`. Reference in prompts if needed (e.g., "Fetch portfolio data using this API key").
+
+**Why**: This ensures Vercel compatibility and AI support for frontend optimization.
+
+#### 5. Customizing Windsurf Experience
+Tailor Windsurf for Investim:
+
+- **Key Bindings/Themes**: Use VS Code-style bindings and a blue-themed, high-contrast theme matching Investim’s branding for readability.
+- **Extensions**: Install only essentials: Tailwind CSS IntelliSense, ESLint, Prettier, Vercel Toolkit. Avoid performance-hindering extensions.
+- **Updates**: Regularly update Windsurf for Next.js/TypeScript features.
+
+**Why**: Customization enhances productivity and aligns with Investim’s visual identity.
+
+#### 6. Documentation and Collaboration
+Maximize AI context with documentation:
+
+- **`/docs`**: Include:
+  - `README.md`: Project overview, tech stack, Windsurf setup.
+  - `design-specs.md`: Investim design details (e.g., blue buttons, 5.5% pie chart, risk slider), referencing your image.
+  - `v0-notes.md`: Notes on v0, including `v0-user-next.config.js` purpose.
+- **Prompt with Docs**: Start prompts with, "Refer to `/docs/design-specs.md` and update `PortfolioChart.tsx` for 5.5% return."
+
+**Why**: Documentation prevents context loss, aiding multi-file edits.
+
+#### 7. Testing and Quality Assurance
+Ensure landing page quality:
+
+- **Tests**: Add `/tests` for components (e.g., `PortfolioChart.test.tsx`). Use Jest/React Testing Library.
+- **Review AI**: Verify Cascade outputs (e.g., `RiskSlider.tsx`) align with Investim’s design. Use "Explain and Fix" for errors.
+- **Vercel Testing**: Test with `vercel dev`, deploy to verify responsiveness (e.g., mobile pie chart).
+
+**Why**: This ensures a functional, appealing Investim landing page.
+
+#### 8. Version Control and Context Management
+Prevent context loss:
+
+- **Git**: Commit frequently (e.g., after `PortfolioChart.tsx` updates). Push to GitHub/GitLab, integrated with Vercel CI/CD.
+- **Prompts**: If context is lost, use step-by-step prompts, e.g., "Update `InvestmentPortfolio.tsx` for 3.5% deposit, per `/docs/design-specs.md`."
+- **Commits**: Use descriptive messages (e.g., "Add 5.5% return to portfolio chart").
+
+**Why**: This supports stable Vercel deployments and AI continuity.
+
+#### 9. Performance Optimization
+Optimize for users:
+
+- **Prompts**: Ask, "Optimize `PortfolioChart.tsx` for mobile and Vercel SSR."
+- **Assets**: Store images in `/public`, optimize with Vercel tools.
+- **Code Splitting**: Use Next.js splitting for `page.tsx`, `PortfolioChart.tsx`. Prompt, "Implement code splitting for `CallToActionButton.tsx`."
