@@ -11,6 +11,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dependency conflicts between date-fns and react-day-picker
 - Logo background fill in SVG
 
+## [0.2.1] - 2025-02-24
+
+### Added
+- PortfolioChart component with interactive risk slider and pie chart visualization
+- RechartsChart component for handling pie chart rendering
+
+### Changed
+- Updated text colors and spacing in PortfolioChart to match design specifications
+- Improved alignment of allocation grid with chart width
+- Reorganized component structure for better maintainability
+
+### Fixed
+- Resolved hydration errors by implementing dynamic imports for Recharts components
+
 ## [0.2.0] - 2025-02-24
 
 ### Added

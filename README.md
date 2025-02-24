@@ -23,6 +23,23 @@ Modern landing page for Investim, built with Next.js, TypeScript, and Tailwind C
 - `FeatureCard` - Interactive card with white border and chevron icon
 - `Button` - Customizable button component with hover effects
 
+### PortfolioChart
+
+The PortfolioChart component provides an interactive visualization of investment allocations. Key features include:
+
+- Interactive pie chart showing current portfolio allocation
+- Risk level slider with real-time updates
+- Detailed allocation breakdown with percentages
+- Responsive design for all screen sizes
+
+### RechartsChart
+
+A dedicated component for handling the pie chart visualization using Recharts library. Features:
+
+- Dynamic imports for client-side only rendering
+- Customizable colors and dimensions
+- Proper error handling and type safety
+
 ## Getting Started
 
 1. Clone the repository:
