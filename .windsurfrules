@@ -86,7 +86,7 @@ Ensure landing page quality:
 #### 8. Version Control and Context Management
 Prevent context loss:
 
-- **Git**: Commit frequently (e.g., after `PortfolioChart.tsx` updates). Push to GitHub/GitLab, integrated with Vercel CI/CD.
+- **Git**: DO NOT COMMIT UNLESS I TELL YOU TO
 - **Prompts**: If context is lost, use step-by-step prompts, e.g., "Update `InvestmentPortfolio.tsx` for 3.5% deposit, per `/docs/design-specs.md`."
 - **Commits**: Use descriptive messages (e.g., "Add 5.5% return to portfolio chart").
 
