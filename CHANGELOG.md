@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Dependency conflicts between date-fns and react-day-picker
+- Logo background fill in SVG
+
+## [0.2.0] - 2025-02-24
+
 ### Added
 - Created reusable `FeatureCard` component with:
   - White border and backdrop blur
@@ -29,10 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated site header with new logo
 - Downgraded date-fns to v3.3.1 for compatibility with react-day-picker
 - Improved component organization and structure
-
-### Fixed
-- Dependency conflicts between date-fns and react-day-picker
-- Logo background fill in SVG
 
 ### Documentation
 - Added detailed design specifications
