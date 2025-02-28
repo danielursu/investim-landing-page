@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero"
 import { SiteHeader } from "@/components/site-header"
 import { StepsSection } from "@/components/steps-section"
+import { FooterSection } from "@/components/ui/footer-section"
 import dynamic from "next/dynamic"
 
 const PortfolioChart = dynamic(() => import("@/components/portfolio-chart"), {
@@ -14,6 +15,7 @@ export default function Page() {
       <Hero />
       <PortfolioChart />
       <StepsSection />
+      <FooterSection />
     </main>
   )
 }

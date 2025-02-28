@@ -103,6 +103,32 @@
   - Duration: `duration-300`
   - Properties: `transition-all`
 
+### Footer Section
+- Background: `bg-background`
+- Border Top: `border-t`
+- Layout:
+  - Grid: `grid gap-12 md:grid-cols-2 lg:grid-cols-4`
+  - Container: `container mx-auto px-4 py-12 md:px-6 lg:px-8`
+- Newsletter:
+  - Input: `pr-12 backdrop-blur-sm`
+  - Button: `absolute right-1 top-1 h-8 w-8 rounded-full bg-primary`
+  - Animation: `transition-transform hover:scale-105`
+- Contact Form:
+  - Inputs: `backdrop-blur-sm`
+  - Submit Button: `w-full bg-primary text-primary-foreground`
+- Social Links:
+  - Size: `h-10 w-10`
+  - Background: `bg-muted/80 backdrop-blur-sm`
+  - Hover: `hover:bg-primary hover:text-primary-foreground`
+  - Animation: `transition-all duration-300`
+- Quick Links:
+  - Limited to: "Deschide cont" and "Accesare cont"
+  - Hover: `hover:text-primary`
+- Copyright:
+  - Year: Dynamic using JavaScript `new Date().getFullYear()`
+  - Company: Investim
+  - Language: Romanian
+
 ### Buttons
 - Primary Button:
   - Background: Primary Gradient

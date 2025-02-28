@@ -1,3 +1,4 @@
+import './globals.css'
 import type React from "react"
 import { Manrope } from "next/font/google"
 import { Inter } from "next/font/google"
@@ -12,6 +13,10 @@ const inter = Inter({
   display: "swap",
 })
 
+export const metadata = {
+  generator: 'v0.dev'
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -23,9 +28,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };

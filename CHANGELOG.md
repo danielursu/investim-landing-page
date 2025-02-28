@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.3.0] - 2025-02-28
+
+### Added
+- Footer section component with newsletter subscription, contact form, and social media links
+
+### Changed
+- Updated copyright information with dynamic year and company name (Investim)
+- Translated footer content to Romanian
+- Modified quick links in footer to only include "Deschide cont" and "Accesare cont"
 
 ### Fixed
 - Dependency conflicts between date-fns and react-day-picker
