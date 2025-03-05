@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2025-03-05
+
+### Added
+- New `use-button-animations` hook for consistent button hover effects
+- GSAP-powered animations for RegisterButton component
+- Smooth chevron animation on button hover
+- New reusable RegisterButton component with modern gradient animations
+- Interactive hover effects and smooth transitions for RegisterButton
+- Animated chevron icon in RegisterButton for better UX
+- GSAP animation library integration
+- Custom useGsapAnimations hook for managing animations
+- Smooth entrance animations for hero section
+- Scroll-triggered animations for feature cards
+- Enhanced hover animations for register button
+
+### Changed
+- Refactored animation system to use GSAP for all transitions
+- Improved button hover interactions with synchronized scale and shadow effects
+- Updated RegisterButton to use shared animation hook in both header and hero sections
+- Refactored button implementation in site-header and hero sections
+- Enhanced button styling with dynamic gradients and shadows
+- Improved button accessibility with proper z-indexing and contrast
+
+### Fixed
+- Inconsistent hover animations between header and hero RegisterButtons
+- Chevron animation smoothness on hover
+- Memory leaks in animation event listeners
+- Improved GSAP animations for feature cards to maintain consistent glassmorphic effect
+- Synchronized register button and feature cards animations
+- Optimized animation durations for better user experience
+- Fixed backdrop blur flickering during feature card animations
+
 ## [0.3.0] - 2025-02-28
 
 ### Added

@@ -1,17 +1,22 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 interface FeatureCardProps {
   title: string
   description: string
   href: string
+  className?: string
 }
 
-export function FeatureCard({ title, description, href }: FeatureCardProps) {
+export function FeatureCard({ title, description, href, className }: FeatureCardProps) {
   return (
     <Link
       href={href}
-      className="group relative overflow-hidden rounded-2xl bg-white/10 border border-white/20 p-6 pr-16 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-xl"
+      className={cn(
+        "group relative overflow-hidden rounded-2xl bg-white/10 border border-white/20 p-6 pr-16 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-xl",
+        className
+      )}
     >
       <div className="space-y-2">
         <h3 className="text-2xl font-semibold text-white">{title}</h3>
